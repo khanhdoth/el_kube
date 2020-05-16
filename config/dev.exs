@@ -5,7 +5,7 @@ config :el_kube, ElKube.Repo,
   username: "postgres",
   password: "postgres",
   database: "el_kube_dev",
-  hostname: "localhost",
+  hostname: "172.17.0.1",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 
