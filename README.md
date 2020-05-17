@@ -293,7 +293,7 @@ spec:
 
 #### Create a Persistent Volume Claim
 ```
-$ kubectl create -f k8s/pvc.yaml
+$  kubectl create -f k8s/pvc.yaml
 ```
 
 #### Create the db using the PVC
