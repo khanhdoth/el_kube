@@ -254,7 +254,7 @@ $ docker build -t el_kube:latest .
 #### Start the container
 ```
 $ docker network create el-kube-net
-$ docker run --rm -d -h db -e POSTGRES_DB=el_kube_prod -p 5432 --name db --network el-kube-net postgres:9.6
+$ docker run --rm -d -h db -e POSTGRES_DB=el_kube_prod -e POSTGRES_PASSWORD=postgres -p 5432 --name db --network el-kube-net postgres:9.6
 $ docker run -it --rm -e DB_URL=psql://postgres:postgres@db/el_kube_prod -e RELEASE_COOKIE=secret-cookie -e SERVICE_NAME=el-kube -e SECRET_KEY_BASE=foo -e PORT=4000 -e APP_HOST=localhost -p 4000 --network el-kube-net --publish 4000:4000 el_kube:latest
 ```
 OR
