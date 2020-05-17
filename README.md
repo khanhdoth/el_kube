@@ -466,7 +466,9 @@ spec:
       securityContext: {}
       terminationGracePeriodSeconds: 30
 ```
-
+```
+$ kubectl create -f k8s/el-kube.yaml
+```
 ### Check your work
 ```
 $ kubectl exec -it el-kube-deployment-<hash> sh
