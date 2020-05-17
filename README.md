@@ -151,7 +151,7 @@ $ mix ecto.create
 #### Run the release
 Console 1:
 ```
-DB_URL=psql://postgres:postgres@localhost/el_kube_dev RELEASE_COOKIE=foo SECRET_KEY_BASE=foo HOSTNAME=127.0.0.1 SERVICE_NAME=localhost.svc APP_HOST=localhost PORT=4000 _build/prod/rel/el_kube/bin/el_kube start
+DB_URL=psql://postgres:postgres@172.17.0.1/el_kube_dev RELEASE_COOKIE=foo SECRET_KEY_BASE=foo HOSTNAME=127.0.0.1 SERVICE_NAME=localhost.svc APP_HOST=localhost PORT=4000 _build/prod/rel/el_kube/bin/el_kube start
 ```
 
 You should now be able to open http://localhost:4000
