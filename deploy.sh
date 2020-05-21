@@ -1,5 +1,4 @@
 #!/bin/bash
-
 cd /home/khanh_doth/dev/git/el_kube
 docker build -t el_kube:latest .
 
