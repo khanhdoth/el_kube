@@ -1,5 +1,6 @@
 #!/bin/bash
-cd /home/khanh_doth/dev/git/el_kube
+# cd /home/khanh_doth/dev/git/el_kube
+cd /Users/khanhdo/development/git/el_kube
 docker build -t el_kube:latest .
 
 kubectl create -f k8s/pvc.yaml
